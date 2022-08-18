@@ -12,15 +12,15 @@ public class Main {
 
         System.out.println("До сортировки:");
 
-        for (Person person:list) {
+        for (Person person : list) {
             System.out.println(person);
         }
 
-        Collections.sort(list, new PersonComparator());
+        Collections.sort(list, new PersonComparator(2));
 
         System.out.println("\nПосле сортировки:");
 
-        for (Person person:list) {
+        for (Person person : list) {
             System.out.println(person);
         }
     }
